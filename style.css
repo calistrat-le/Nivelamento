@@ -1,18 +1,28 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin:0;
+    padding:0;
 }
 
 body{
-    color: yellow;
-    background-color: blue;
-    margin: 0px;
-    margin-bottom: 100px;
+    background-color: #8B5A2B;
+    color: #F5E6C8;
+    font-family: Georgia, serif;
 }
 
 header{
-    border-bottom: solid 2px orange;
-    margin: 20px;
-    font-size: 32px;
-    color: white;
+    text-align: center;
+    border-bottom: solid 3px #D4AF37;
+    padding: 30px;
+}
+
+h1{
+    font-size: 60px;
+}
+
+p{
+    width: 70%;
+    margin: 40px auto;
+    font-size: 28px;
+    text-align: center;
+    line-height: 1.8;
 }
