@@ -26,3 +26,14 @@ p{
     text-align: center;
     line-height: 1.8;
 }
+h1{
+    text-shadow: 3px 3px 8px black;
+}
+
+body{
+    background: linear-gradient(
+        to bottom,
+        #6F4E37,
+        #3E2723
+    );
+}
