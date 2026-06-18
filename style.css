@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: yellow;
+    background-color: blue;
+    margin: 0px;
+    margin-bottom: 100px;
+}
+
+header{
+    border-bottom: solid 2px orange;
+    margin: 20px;
+    font-size: 32px;
+    color: white;
+}
