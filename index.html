@@ -16,7 +16,7 @@
 
         body {
             background-color: var(--cor-fundo);
-            background-image: url('https://www.transparenttextures.com/patterns/dark-matter.png' ); /* Textura sutil */
+            background-image: url('https://www.transparenttextures.com/patterns/dark-matter.png' );
             color: var(--cor-texto);
             font-family: 'EB Garamond', serif;
             margin: 0;
@@ -61,7 +61,7 @@
             border-radius: 10px;
             box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
             position: relative;
-            margin: 40px 20px;
+            margin: 40px 20px 100px 20px;
             z-index: 5;
             backdrop-filter: blur(5px);
         }
@@ -74,7 +74,6 @@
             font-weight: 400;
         }
 
-        /* Estilo das Imagens PNG (Decoração) */
         .decoracao {
             position: absolute;
             pointer-events: none;
@@ -82,7 +81,6 @@
             filter: drop-shadow(0 0 10px rgba(0,0,0,0.5));
         }
 
-        /* Trio (Harry, Rony, Hermione) - Superior Esquerda */
         .trio {
             top: 20px;
             left: 5%;
@@ -90,32 +88,28 @@
             position: fixed;
         }
 
-        /* Castelo de Hogwarts - Inferior Direita */
-        .hogwarts {
-            bottom: 0;
-            right: 0;
-            width: 400px;
+        .brasao {
+            bottom: 50px;
+            right: 5%;
+            width: 250px;
             position: fixed;
-            opacity: 0.8;
+            opacity: 0.9;
         }
 
-        /* Patrono - Inferior Esquerda */
-        .patronum {
-            bottom: 20px;
-            left: 2%;
-            width: 220px;
-            position: fixed;
-            filter: drop-shadow(0 0 20px #87ceeb);
-            opacity: 0.7;
+        .logo-final {
+            margin: 50px auto 80px auto;
+            width: 350px;
+            display: block;
+            filter: drop-shadow(0 0 15px var(--cor-dourada));
+            z-index: 10;
         }
 
-        /* Responsividade para Celular */
         @media (max-width: 1100px) {
             .decoracao {
                 position: relative;
                 display: block;
-                margin: 20px auto;
-                width: 200px;
+                margin: 40px auto;
+                width: 220px;
                 left: auto;
                 right: auto;
                 top: auto;
@@ -123,22 +117,21 @@
                 opacity: 1;
             }
             h1 { font-size: 2.2rem; }
-            .container { padding: 25px; margin-top: 10px; }
-            .linha-dourada { width: 80%; }
+            .container { padding: 25px; }
+            .logo-final { width: 250px; }
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1> A saga Harry Potter </h1>
+        <h1>A saga Harry Potter</h1>
         <div class="linha-dourada"></div>
     </header>
 
-    <!-- Imagens PNG de decoração -->
     <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663794002717/cTsEPZDPjeXuwEXL.png" alt="O Trio" class="decoracao trio">
-    <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663794002717/QazGvVREyACSQDUj.png" alt="Castelo de Hogwarts" class="decoracao hogwarts">
-    <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663794002717/XEDseqRoxxtYBsUg.png" alt="Expecto Patronum" class="decoracao patronum">
+
+    <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663794002717/abXlvtprGsrXyDdL.png" alt="Brasão de Hogwarts" class="decoracao brasao">
 
     <div class="container">
         <p>
@@ -146,5 +139,8 @@
         </p>
     </div>
 
+    <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663794002717/NiEZOhMVrSMeHWOf.png" alt="Harry Potter Logo" class="logo-final">
+
 </body>
 </html>
+
